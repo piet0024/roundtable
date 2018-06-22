@@ -1,20 +1,28 @@
 import React from 'react';
 
+import { Card, CardBody } from 'reactstrap'
+
 import MeetingDetailedInfo from '../components/MeetingDetailedInfo';
 import MeetingAgenda from '../components/MeetingAgenda';
 import MeetingComments from '../components/MeetingComments';
 
 const Meeting = ({ match }) => (
   <div>
-    <div>
+    <Card>
+      <CardBody>
       <MeetingDetailedInfo id={match.params.id} />
-    </div>
-    <div className="mb-4">
+    </CardBody>
+    </Card>
+    <Card className="mb-4">
+      <CardBody>
       <MeetingAgenda id={match.params.id} />
-    </div>
-    <div>
+    </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
       <MeetingComments id={match.params.id} />
-    </div>
+    </CardBody>
+    </Card>
   </div>
 );
 

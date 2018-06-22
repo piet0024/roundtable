@@ -10,7 +10,7 @@ export default class MeetingAgenda extends React.Component {
     return (
       <div>
         <h2 className="h3">Agenda for meeting {this.props.id}</h2>
-        <div className="agenda-item-holder">
+        <div className="agenda-item-holder mb-3">
           <MeetingAgendaItem
             time="1:00 - 1:15"
             title="It's time to stop 9gag links"

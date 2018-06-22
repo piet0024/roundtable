@@ -6,7 +6,7 @@ import { ListGroupItem, ListGroupItemHeading } from 'reactstrap';
 export default class MeetingPreview extends React.Component {
   render() {
     return (
-      <ListGroupItem tag="a" href={`/m/${this.props.id}`} action>
+      <ListGroupItem className="list-group-item-accent-success" tag="a" href={`/m/${this.props.id}`} action >
         <div>
           {this.props.time}
         </div>
