@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, CardBody } from 'reactstrap'
+import { Card, CardBody } from 'reactstrap';
 
 import MeetingDetailedInfo from '../components/MeetingDetailedInfo';
 import MeetingAgenda from '../components/MeetingAgenda';
@@ -10,18 +10,18 @@ const Meeting = ({ match }) => (
   <div>
     <Card>
       <CardBody>
-      <MeetingDetailedInfo id={match.params.id} />
-    </CardBody>
+        <MeetingDetailedInfo id={match.params.id} />
+      </CardBody>
     </Card>
     <Card className="mb-4">
       <CardBody>
-      <MeetingAgenda id={match.params.id} />
-    </CardBody>
+        <MeetingAgenda id={match.params.id} />
+      </CardBody>
     </Card>
     <Card>
       <CardBody>
-      <MeetingComments id={match.params.id} />
-    </CardBody>
+        <MeetingComments id={match.params.id} />
+      </CardBody>
     </Card>
   </div>
 );

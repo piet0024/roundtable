@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class MeetingAgendaItem extends React.Component {
   render() {
     return (
-      <div style={{paddingLeft:'10px'}} className="border-left">
+      <div style={{ paddingLeft: '10px' }} className="border-left">
         <div>{this.props.time}</div>
         <div>{this.props.title}</div>
         <div className="text-muted mb-2"><small>Sponsor</small></div>
