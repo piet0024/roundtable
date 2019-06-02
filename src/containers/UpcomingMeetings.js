@@ -2,7 +2,10 @@ import React from 'react';
 
 import {
   Row, Col,
-  ListGroup
+  ListGroup,
+  ListGroupItem,
+  Card,
+  CardBody
 } from 'reactstrap';
 
 import MeetingPreview from '../components/MeetingPreview';
@@ -18,15 +21,12 @@ export default class UpcomingMeetings extends React.Component {
         <Row>
           <h1 className="sr-only">Upcoming Meetings</h1>
         </Row>
-        <Row>
-          <Col className="bg-primary text-white d-flex justify-content-start">
-            <div className="mr-3">
-              <div>14</div>
-              <div>June</div>
-            </div>
-            <h2>Today</h2>
-          </Col>
-          <ListGroup style={style}>
+
+        <Card className="" style={style}>
+          <ListGroup flush >
+            <ListGroupItem className="bg-primary text-white text-center">
+              <h2 className="h5">Today</h2>
+            </ListGroupItem>
             <MeetingPreview
               id="35"
               title="This is the Title"
@@ -40,30 +40,38 @@ export default class UpcomingMeetings extends React.Component {
               location="the moon"
             />
           </ListGroup>
-        </Row>
-        <Row>
-          <Col className="bg-primary text-white d-flex justify-content-start">
-            <div className="mr-3">
-              <div>15</div>
-              <div>June</div>
-            </div>
-            <h2>Tomorrow</h2>
-          </Col>
-          <ListGroup style={style}>
+        </Card>
+
+        <Card className="" style={style}>
+          <ListGroup flush >
+            <ListGroupItem className="bg-primary text-white text-center">
+              <h2 className="h5">Tomorrow</h2>
+            </ListGroupItem>
+            <ListGroupItem>
+                Yay! No Meetings today!
+            </ListGroupItem>
+          </ListGroup>
+        </Card>
+
+        <Card className="" style={style}>
+          <ListGroup flush >
+            <ListGroupItem className="bg-primary text-white text-center">
+              <h2 className="h5">The Next day</h2>
+            </ListGroupItem>
             <MeetingPreview
-              id="30"
+              id="35"
               title="This is the Title"
               time="1:00 - 2:00"
               location="the moon"
             />
             <MeetingPreview
               id="30"
-              title="This is the Title"
+              title="Oh my goodness"
               time="1:00 - 2:00"
               location="the moon"
             />
           </ListGroup>
-        </Row>
+        </Card>
 
       </div>
     );

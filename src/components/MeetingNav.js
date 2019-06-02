@@ -19,7 +19,7 @@ export default class MeetingNav extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light>
+        <Navbar color="primary" dark>
           <NavbarBrand href="/" className="mr-auto">Roundtable</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>

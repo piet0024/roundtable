@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class MeetingAgendaItem extends React.Component {
   render() {
     return (
-      <div className="border-left">
+      <div style={{ paddingLeft: '10px' }} className="border-left">
         <div>{this.props.time}</div>
         <div>{this.props.title}</div>
         <div className="text-muted mb-2"><small>Sponsor</small></div>
@@ -26,9 +26,9 @@ class MeetingAgendaItem extends React.Component {
         <p>{this.props.body}</p>
 
         <div className="text-muted mb-2"><small>Notes</small></div>
-        <Button outline color="secondary">Add Notes</Button>{' '}
+        <Button outline color="primary">Add Notes</Button>{' '}
         <div className="text-muted mb-2"><small>Actions</small></div>
-        <Button outline color="secondary">Add Action</Button>{' '}
+        <Button outline color="primary">Add Action</Button>{' '}
       </div>
     );
   }

@@ -21,7 +21,7 @@ class App extends Component {
       <div>
         <MeetingNav />
 
-        <Container className="mb-4">
+        <Container className="mb-4 mt-2">
           <Router>
             <Fragment>
               <div>
